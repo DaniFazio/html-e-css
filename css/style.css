@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "titulo";
+    src: url(/Assets/fonts/Metropolis-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: "parrafo";
+    src: url(/Assets/fonts/Metropolis-Thin.otf);
+}
+
+@font-face {
+    font-family: "bottone";
+    src: url(/Assets/fonts/Metropolis-Medium.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1em;
+    font-family: "bottone";
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: #8ca28c3;
+}
+
+button:hover{
+    background-color: rgba(140, 162, 140, 0.65);
+    color: white;
+}
+
+header {
+    background-color: rgb(245, 245,245);
+}
+
+header a{
+    font-family: "bottone";
+    color: #83a880;
+}
+
+#hero{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(189, 255, 189, 0.65);
+    flex-direction: column;
+    height: 90vh;
+    background-image:url(/Assets/img/imgarb.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero h1{
+    font-size: 3.5em;
+}
+#hero p{
+    font-family: "parrafo" ;
+    color: white;
+    padding: 15px;
+}
+
+#hero span{
+    font-size: 2em;
+    font-family: "titulo";
+    color: rgba(189, 255, 189, 0.65);
+    padding: 12px;
+}
+
+#me{
+    background-color: rgb(245, 245,245);
+}
+
+#me .img-container{
+    display: none;
+}
+
+#me .container{
+   
+    text-align: center;
+    padding: 80px 12px;
+    justify-content: center;
+}
+#me .testo{
+    padding: 45px 45px;
+}
+#me h2{
+    font-family: "parrafo";
+    font-size: 5vh;
+}
+
+#me p{
+    font-family: "parrafo";
+    font-size: 3vh;
+}
+
+#me span{
+    font-family: "titulo";
+    color:#8ca28c;
+}
+
+
+
+#services {
+
+    text-align: center;
+    color: black;
+    background-image: url(/Assets/img/imgpaj.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+} 
+
+#services .container{
+    padding: 100px 12px;
+}
+
+#services h2{
+    padding-top: 100px;
+    font-family: "titulo";
+}
+
+#services .img span {
+    display: none;
+}
+
+#services p{
+    display: none;
+}
+
+
+#services .carta{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    font-family: "bottone";
+       
+}
+
+.carta:nth-child(2){
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    font-family: "bottone";
+}
+
+.carta:nth-child(3){
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    font-family: bottonen";
+    }
+
+.carta:nth-child(4){
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 12px;
+    font-family: "bottone";
+    }
+
+#portfolio .container{
+    height: 90vh;
+    padding-top: 50px;
+    background-color: rgba(0,0,0,0.2);
+    color: black;
+    display: flex;
+}
+
+#portfolio .container{
+    
+    background-color: rgb(245, 245,245);
+    padding: 20px 20px;
+    text-align: center;
+    font-family: "bottone";
+    align-items: center;
+}
+
+#portfolio h3 {
+    color: rgba(255, 163, 93, 0.759) ;
+}
+
+#connect {
+    background-image: url(/Assets/img/connect.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#connect .container-img{
+    margin-top: 100px
+    max-width: 400px;
+    padding: 15px 30px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+#connect h3 {
+    text-align: center;
+    font-family: "bottone";
+    font-size: 5vh;
+    color: rgba(255, 163, 93, 0.759);
+}
+
+#connect p {
+    color:rgba(245, 245,245, 0.7);
+    text-align: center;
+    
+}
+
+#connect .container-form {
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+input,textarea, label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #f3f3f3;
+}
+
+input, textarea {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 163, 93);
+}
+
+input[type=submit]:hover {
+    background-color:#f3f3f3;
+    color: black;
+}
+
+  footer {
+      background-color: rgb(245, 245,245);
+
+  }
+
+  footer p{
+      font-size: 2.5vh;
+      margin: 0;
+      font-family: "paragrafo";
+      padding: 12px;
+
+  }
+
+  footer .container { 
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+
+  @media (min-width: 720px) {
+      #me .container{
+        display: flex;
+        justify-content: center;
+      }
+
+      #me .testo {
+          margin-left: 30px;
+          width: 50%;
+          max-width: 600px;
+          text-align: initial;
+          padding: 30px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      #me .img-container{
+          display: block;
+          background-image: url(/Assets/img/img-yo.jpg);
+          background-size: cover;
+          background-position: center center;
+          height: 600px;
+          width: 500px;
+          border-radius: 30px;
+          box-shadow: 2px 2px 15px;
+      }
+
+      #services .servizi{
+        display: block;
+      }
+
+      #services p{
+          display: block;
+          font-size: 2vh;
+
+      }
+
+      #portfolio {
+          margin: 0 auto;
+          align-items: center;
+          text-align: center;
+      }
+
+  }
