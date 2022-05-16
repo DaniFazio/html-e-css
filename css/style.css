@@ -72,7 +72,6 @@ button:hover{
     background-attachment: fixed;
 }
 
-
 #inizio h1{
     font-size: 3.5em;
     font-family: "Raleway", sans-serif;
@@ -113,6 +112,7 @@ button:hover{
 #io .testo{
     padding: 45px 45px;
 }
+
 #io h2{
     font-family: "Raleway", sans-serif;
     font-size: 5vh;
@@ -133,7 +133,6 @@ button:hover{
 
 
 #servizi {
-
     text-align: center;
     color: black;
     background-image: url(../Assets/img/imgpaj.jpg);
@@ -141,7 +140,6 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 } 
 
 #servizi .container{
@@ -278,16 +276,14 @@ input[type=submit]:hover {
 
   footer {
       background-color: rgb(245, 245,245);
-
-  }
+}
 
   footer p{
       font-size: 2.5vh;
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       padding: 12px;
-
-  }
+}
 
   footer .container { 
       height: 100px;
@@ -296,7 +292,7 @@ input[type=submit]:hover {
       align-items: flex-end;
   }
 
-  @media (min-width: 720px) {
+@media (min-width: 720px) {
 
 
     
