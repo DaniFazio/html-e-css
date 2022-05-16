@@ -1,29 +1,16 @@
-@font-face {
-    font-family: "titulo";
-    src: url(/Assets/fonts/Metropolis-ExtraBold.otf);
-}
-
-@font-face {
-    font-family: "parrafo";
-    src: url(/Assets/fonts/Metropolis-Thin.otf);
-}
-
-@font-face {
-    font-family: "bottone";
-    src: url(/Assets/fonts/Metropolis-Medium.otf);
-}
-
 *{
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-
 body{
     margin: 0;
+    padding: 0;
+    outline: 0;
+    padding: 80px 0px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 h1{font-size: 3.5em;}
@@ -35,100 +22,121 @@ li{font-size: 1.25em;}
 
 button{
     font-size: 1em;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
     padding: 5px 20px;
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: black;
-    background-color: #8ca28c3;
 }
 
 button:hover{
-    background-color: rgba(140, 162, 140, 0.65);
+    background-color:#2d2d29d5; 
     color: white;
 }
 
-header {
-    background-color: rgb(245, 245,245);
+.header{
+    background-color: rgba(0,0,0,0.2);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-header a{
-    font-family: "bottone";
-    color: #83a880;
+.nav{
+    display: flex;
+    justify-content: space-between;
 }
 
-#hero{
-    margin-top: 90px;
+.nav-link{
+    color: #8ca28c;
+    font-family:  "Raleway", sans-serif;  
+    text-decoration: none; 
+}
+
+#inizio{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgba(189, 255, 189, 0.65);
     flex-direction: column;
-    height: 90vh;
-    background-image:url(/Assets/img/imgarb.jpg);
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
+    url(../Assets/img/imgarb.jpg);
+    
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#hero h1{
+
+#inizio h1{
     font-size: 3.5em;
-}
-#hero p{
-    font-family: "parrafo" ;
+    font-family: "Raleway", sans-serif;
     color: white;
-    padding: 15px;
+    letter-spacing: 5px;
 }
 
-#hero span{
+#inizio p{
     font-size: 2em;
-    font-family: "titulo";
-    color: rgba(189, 255, 189, 0.65);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 12px 50px;
+}
+
+#inizio span{
+    font-size: 1.5em;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    color: #baa33e;
     padding: 12px;
 }
 
-#me{
+#io{
     background-color: rgb(245, 245,245);
 }
 
-#me .img-container{
+#io .img-container{
     display: none;
 }
 
-#me .container{
-   
+
+#io .container{
     text-align: center;
     padding: 80px 12px;
     justify-content: center;
 }
-#me .testo{
+
+#io .testo{
     padding: 45px 45px;
 }
-#me h2{
-    font-family: "parrafo";
+#io h2{
+    font-family: "Raleway", sans-serif;
     font-size: 5vh;
 }
 
-#me p{
-    font-family: "parrafo";
+#io p{
+    font-family: 'Montserrat', sans-serif;
     font-size: 3vh;
 }
 
-#me span{
-    font-family: "titulo";
+#io span{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
     color:#8ca28c;
+    size: 3vh;
 }
 
 
 
-#services {
+#servizi {
 
     text-align: center;
     color: black;
-    background-image: url(/Assets/img/imgpaj.jpg);
+    background-image: url(../Assets/img/imgpaj.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -136,25 +144,26 @@ header a{
 
 } 
 
-#services .container{
+#servizi .container{
     padding: 100px 12px;
 }
 
-#services h2{
+#servizi h2{
     padding-top: 100px;
-    font-family: "titulo";
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
 }
 
-#services .img span {
+#servizi .img span {
     display: none;
 }
 
-#services p{
+#servizi p{
     display: none;
 }
 
 
-#services .carta{
+#servizi .carta{
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
@@ -164,7 +173,7 @@ header a{
     background-color: rgba(0,0,0,0.5);
     color: white;
     padding: 12px;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
        
 }
 
@@ -172,25 +181,28 @@ header a{
     background-color: rgba(0,0,0,0.5);
     color: white;
     padding: 12px;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
 }
 
 .carta:nth-child(3){
     background-color: rgba(0,0,0,0.5);
     color: white;
     padding: 12px;
-    font-family: bottonen";
+    font-family: 'Cairo', sans-serif;
     }
 
 .carta:nth-child(4){
     background-color: rgba(0,0,0,0.5);
     color: white;
     padding: 12px;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
     }
-
+#portfolio{
+    width: 100%;
+}
 #portfolio .container{
     height: 90vh;
+    width: 100%;
     padding-top: 50px;
     background-color: rgba(0,0,0,0.2);
     color: black;
@@ -202,7 +214,7 @@ header a{
     background-color: rgb(245, 245,245);
     padding: 20px 20px;
     text-align: center;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
     align-items: center;
 }
 
@@ -210,15 +222,15 @@ header a{
     color: rgba(255, 163, 93, 0.759) ;
 }
 
-#connect {
-    background-image: url(/Assets/img/connect.jpg);
+#contattami {
+    background-image: url(../Assets/img/connect.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#connect .container-img{
+#contattami .container-img{
     margin-top: 100px
     max-width: 400px;
     padding: 15px 30px;
@@ -226,20 +238,20 @@ header a{
     border-radius: 30px;
 }
 
-#connect h3 {
+#contattami h3 {
     text-align: center;
-    font-family: "bottone";
+    font-family: 'Cairo', sans-serif;
     font-size: 5vh;
     color: rgba(255, 163, 93, 0.759);
 }
 
-#connect p {
+#contattami p {
     color:rgba(245, 245,245, 0.7);
     text-align: center;
     
 }
 
-#connect .container-form {
+#contattami .container-form {
     background-color: rgba(0,0,0,0.8);
     padding: 25px;
     border-radius: 15px;
@@ -272,7 +284,7 @@ input[type=submit]:hover {
   footer p{
       font-size: 2.5vh;
       margin: 0;
-      font-family: "paragrafo";
+      font-family: 'Montserrat', sans-serif;
       padding: 12px;
 
   }
@@ -285,38 +297,31 @@ input[type=submit]:hover {
   }
 
   @media (min-width: 720px) {
-      #me .container{
+
+
+    
+
+      #io .container{
         display: flex;
         justify-content: center;
       }
 
-      #me .testo {
+
+      #io .testo {
           margin-left: 30px;
-          width: 50%;
-          max-width: 600px;
+          width: 100vh;
           text-align: initial;
-          padding: 30px 30px;
           display: flex;
           flex-direction: column;
           justify-content: center;
       }
 
-      #me .img-container{
-          display: block;
-          background-image: url(/Assets/img/img-yo.jpg);
-          background-size: cover;
-          background-position: center center;
-          height: 600px;
-          width: 500px;
-          border-radius: 30px;
-          box-shadow: 2px 2px 15px;
-      }
 
-      #services .servizi{
+      #servizi .servizi{
         display: block;
       }
 
-      #services p{
+      #servizi p{
           display: block;
           font-size: 2vh;
 
@@ -329,3 +334,60 @@ input[type=submit]:hover {
       }
 
   }
+
+  
+  @media (min-width: 900px) {
+
+
+    #inizio .container{
+        display: block;
+        padding: 200px 200px;
+    }
+
+    #inizio h1{
+        font-size: 7em;
+        font-family: "Raleway", sans-serif;
+        color: white;
+        letter-spacing: 5px;
+    }
+
+    #inizio p{
+        font-size: 2.5em;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    #inizio span{
+        font-size: 1em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+
+    #io .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+    #io .img-container {
+        display: block;
+        background-image: url(../Assets/img/img-yo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 450px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 15px;
+        align-items: center;
+    }
+
+    
+    #io .testo {
+        margin-left: 50px;
+        width: 50%;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
